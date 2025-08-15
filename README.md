@@ -83,6 +83,13 @@ plot_results(analysis_results, ground_truth)
 
 This will output a detailed plot showing the histogram of predictions along with lines indicating the ground truth and the results of all the analysis methods you selected.
 
+## Example Output
+
+Running the quickstart guide will produce a detailed plot like the one below. This visualization is key to understanding the model's behavior. Notice how the standard `Mean` is pulled away from the main cluster of predictions by outliers. In contrast, robust methods such as the `Trimmed Mean`, `Mode-Weighted Mean`, and `Kernel Weighted Avg` provide a more central estimate that aligns with the strongest consensus among the trees. The wide `Prediction Interval` also effectively communicates the model's uncertainty.
+
+<img width="1554" height="865" alt="image" src="https://github.com/user-attachments/assets/44c8be46-2fb0-4cb8-980a-c817876c63b8" />
+
+
 ## API Reference
 
 ### `analyze_prediction()`
